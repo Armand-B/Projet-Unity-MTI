@@ -1,0 +1,151 @@
+fileFormatVersion: 2
+guid: 85facc0b9658b004486f80aa48f5e75e
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: ArmBone.001
+    100002: ArmBone.002
+    100004: ArmBone.003
+    100006: ArmBone.004
+    100008: ArmBone.004_end
+    100010: GreenHouse
+    100012: //RootNode
+    100014: RobotArm.000
+    100016: RobotArm.001
+    100018: RobotArm.002
+    100020: RobotArm.003
+    100022: RobotArm.004
+    100024: RootBone
+    100026: SlotBone.001
+    100028: SlotBone.001_end
+    100030: SlotBone.002
+    100032: SlotBone.002_end
+    100034: SlotBone.003
+    100036: SlotBone.003_end
+    400000: ArmBone.001
+    400002: ArmBone.002
+    400004: ArmBone.003
+    400006: ArmBone.004
+    400008: ArmBone.004_end
+    400010: GreenHouse
+    400012: //RootNode
+    400014: RobotArm.000
+    400016: RobotArm.001
+    400018: RobotArm.002
+    400020: RobotArm.003
+    400022: RobotArm.004
+    400024: RootBone
+    400026: SlotBone.001
+    400028: SlotBone.001_end
+    400030: SlotBone.002
+    400032: SlotBone.002_end
+    400034: SlotBone.003
+    400036: SlotBone.003_end
+    2100000: Material
+    2300000: GreenHouse
+    2300002: RobotArm.000
+    2300004: RobotArm.001
+    2300006: RobotArm.002
+    2300008: RobotArm.003
+    2300010: RobotArm.004
+    3300000: GreenHouse
+    3300002: RobotArm.000
+    3300004: RobotArm.001
+    3300006: RobotArm.002
+    3300008: RobotArm.003
+    3300010: RobotArm.004
+    4300000: GreenHouse
+    4300002: RobotArm.001
+    4300004: RobotArm.000
+    4300006: RobotArm.002
+    4300008: RobotArm.004
+    4300010: RobotArm.003
+    7400000: Idle
+    7400002: Working
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
