@@ -34,8 +34,10 @@ public class gun : MonoBehaviour
                 target.TakeDamage(damage);
             }
 
-            Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
-
+            GameObject impactGo =  Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
+            Destroy(impactGo, 2f);
+            
+            
         }
     }
 }
