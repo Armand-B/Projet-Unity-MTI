@@ -1,5 +1,4 @@
-﻿
-using UnityEngine;
+﻿using UnityEngine;
 
 public class gun : MonoBehaviour
 {
@@ -8,6 +7,8 @@ public class gun : MonoBehaviour
 
     public Camera  fpsCam;
     public ParticleSystem muzzleFLash;
+
+    public GameObject impactEffect;
 
     // Update is called once per frame
     void Update()
@@ -32,6 +33,9 @@ public class gun : MonoBehaviour
             {
                 target.TakeDamage(damage);
             }
+
+            Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
+
         }
     }
 }

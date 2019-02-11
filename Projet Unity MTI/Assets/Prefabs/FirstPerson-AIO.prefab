@@ -4698,7 +4698,7 @@ ParticleSystem:
 --- !u!199 &72245184
 ParticleSystemRenderer:
   serializedVersion: 6
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -4903,6 +4903,7 @@ MonoBehaviour:
   range: 100
   fpsCam: {fileID: 1629990487}
   muzzleFLash: {fileID: 72245185}
+  impactEffect: {fileID: 100006, guid: 0438351a6e6422d43a09930e9be00ee9, type: 3}
 --- !u!1 &1508724251
 GameObject:
   m_ObjectHideFlags: 0
