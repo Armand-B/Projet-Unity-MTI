@@ -5,6 +5,8 @@ public class gun : MonoBehaviour
     public float damage = 10f;
     public float range = 100f;
 
+
+    public AudioSource sound;
     public Animator anim;
     public Camera  fpsCam;
     public ParticleSystem muzzleFLash;
@@ -21,6 +23,7 @@ public class gun : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1"))
         {
+            sound.Play();
             print("yes");
             anim.Play("shot");
             Shoot();
