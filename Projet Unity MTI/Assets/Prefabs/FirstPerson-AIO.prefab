@@ -4902,7 +4902,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 10
   range: 100
-  cam: {fileID: 1629990487}
   sound: {fileID: 7025743254605952696}
   anim: {fileID: 1389974423}
   fpsCam: {fileID: 1629990487}
