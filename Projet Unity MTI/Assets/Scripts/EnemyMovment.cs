@@ -6,8 +6,9 @@ using UnityEngine.AI;
 
 public class EnemyMovment : MonoBehaviour
 {
-    NavMeshAgent _navMeshAgent;
-    Transform _destination;
+    public int damage;
+    private NavMeshAgent _navMeshAgent;
+    private Transform _destination;
 
     // Start is called before the first frame update
     void Start()

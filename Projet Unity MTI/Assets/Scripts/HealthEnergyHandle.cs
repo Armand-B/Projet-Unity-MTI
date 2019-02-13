@@ -11,9 +11,12 @@ public class HealthEnergyHandle : MonoBehaviour
     public Text healthText;
     public Slider energyBar;
     public Text energyText;
+    public int secondsInvicibility;
 
     private int currentHealth;
     private int currentEnergy;
+    private bool gotHit = false;
+    private float timeLeft = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -37,5 +40,26 @@ public class HealthEnergyHandle : MonoBehaviour
         energyBar.value = currentEnergy;
         healthText.text = "Health : " + healthBar.value;
         energyText.text = "Energy : " + energyBar.value;
+        timeLeft -= Time.deltaTime;
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Enemy")
+        {
+            if (!gotHit)
+            {
+                gotHit = true;
+                timeLeft = secondsInvicibility;
+                currentHealth -= collision.gameObject.GetComponent<EnemyMovment>().damage;
+            }
+            else
+            {
+                if (timeLeft <= 0)
+                {
+                    gotHit = false;
+                }
+            }
+        }
     }
 }
