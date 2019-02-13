@@ -595,13 +595,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildings:
-  - {fileID: 7323973442904080334, guid: 81d40b76ce0f05e40852e6a9db501761, type: 3}
-  - {fileID: 5891897782826826172, guid: f98c0325f1fbc4142876b61971871938, type: 3}
-  - {fileID: 8696000450932393788, guid: ad7e146a797e6e7489c918de6cc5d986, type: 3}
-  - {fileID: 7606341932248357819, guid: e3c284b2fe2aef345a09bef1bd993a3b, type: 3}
-  mapWith: 20
-  mapHeight: 20
-  buildingFootPrint: 10
+  - {fileID: 3721396675842882581, guid: d4592e08cb74d8c4aaeafe4625912538, type: 3}
+  mapWith: 10
+  mapHeight: 10
+  buildingFootPrint: 50
 --- !u!4 &630479147
 Transform:
   m_ObjectHideFlags: 0
@@ -846,7 +843,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 456198, guid: 1dce2846dc915b44ea1a12401fe517e1, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 456198, guid: 1dce2846dc915b44ea1a12401fe517e1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2105,7 +2102,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 1.006, y: 81.343, z: 10.3}
 --- !u!1 &1873574845
 GameObject:
