@@ -1,6 +1,7 @@
 ﻿//2016 Spyblood Games
 
 using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 [System.Serializable]
@@ -29,6 +30,10 @@ public class DayAndNightControl : MonoBehaviour {
 	public bool showUI;
 	float lightIntensity; //static variable to see what the current light's insensity is in the inspector
 	Material starMat;
+    public Text textCurrentDay;
+    public Text textTimeOfDay;
+    public Text textTimeSlider;
+    public Slider sliderCurrentTime;
 
 	Camera targetCam;
 
@@ -46,17 +51,31 @@ public class DayAndNightControl : MonoBehaviour {
 			currentTime = 0.3f; //start at morning
 			starMat.color = new Color(1f,1f,1f,0f);
 		}
-	}
+        textCurrentDay.text = "Day: " + currentDay;
+        textTimeOfDay.text = TimeOfDay();
+        textTimeSlider.text = "Time slider";
+        sliderCurrentTime.value = currentTime;
+        sliderCurrentTime.maxValue = 1;
+    }
 	
 	// Update is called once per frame
 	void Update () {
 		UpdateLight();
+        UpdateUI();
 		currentTime += (Time.deltaTime / SecondsInAFullDay) * timeMultiplier;
 		if (currentTime >= 1) {
 			currentTime = 0;//once we hit "midnight"; any time after that sunrise will begin.
 			currentDay++; //make the day counter go up
 		}
 	}
+
+    void UpdateUI()
+    {
+        textCurrentDay.text = "Day: " + currentDay;
+        textTimeOfDay.text = TimeOfDay();
+        textTimeSlider.text = "Time slider";
+        sliderCurrentTime.value = currentTime;
+    }
 
 	void UpdateLight()
 	{
@@ -138,16 +157,5 @@ public class DayAndNightControl : MonoBehaviour {
 			dayState = "Night";
 		}
 		return dayState;
-	}
-
-	void OnGUI()
-	{
-		//debug GUI on screen visuals
-		if (showUI) {
-			GUILayout.Box ("Day: " + currentDay);
-			GUILayout.Box (TimeOfDay ());
-			GUILayout.Box ("Time slider");
-			GUILayout.VerticalSlider (currentTime, 0f, 1f);
-		}
 	}
 }
