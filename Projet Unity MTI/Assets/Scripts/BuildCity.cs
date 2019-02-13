@@ -20,15 +20,13 @@ public class BuildCity : MonoBehaviour
             for (int w = 0; w < mapWith; w++)
             {
                 System.Random r = new System.Random();
-                int m = UnityEngine.Random.Range(0, 5);
+               
 
-                if (m >= 4)
-                {
                     Vector3 pos = new Vector3(w * buildingFootPrint, 0, h * buildingFootPrint);
                     int n = UnityEngine.Random.Range(0, buildings.Length);
                     print("rotation : " + angles[r.Next(angles.Length)]);          
                     Instantiate(buildings[n], pos, Quaternion.Euler(0, angles[r.Next(angles.Length)], 0));
-                }
+               
 
                 
             }
