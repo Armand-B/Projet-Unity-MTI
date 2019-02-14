@@ -455,7 +455,7 @@ PrefabInstance:
     - target: {fileID: 8768108655712502757, guid: 2491e413790f9464faafb4fcddf98151,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.30007935
+      value: 2.09
       objectReference: {fileID: 0}
     - target: {fileID: 8768108655712502757, guid: 2491e413790f9464faafb4fcddf98151,
         type: 3}
@@ -616,7 +616,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 630479145}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ef6d363418471e4a9bcefd4654c0f9f, type: 3}
   m_Name: 
@@ -870,7 +870,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 456198, guid: 1dce2846dc915b44ea1a12401fe517e1, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 456198, guid: 1dce2846dc915b44ea1a12401fe517e1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1778,7 +1778,7 @@ RectTransform:
   - {fileID: 790039484}
   - {fileID: 1381201995}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2062,7 +2062,10 @@ MonoBehaviour:
   healthText: {fileID: 770072300}
   energyBar: {fileID: 1595165171}
   energyText: {fileID: 939859272}
+  timeOfDay: {fileID: 1873574847}
   secondsInvicibility: 5
+  energyGivenPerTick: 2
+  timeBetweenEnergy: 5
 --- !u!1 &1822272581
 GameObject:
   m_ObjectHideFlags: 0
@@ -2370,17 +2373,6 @@ MonoBehaviour:
   m_Value: 100
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 770072300}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
