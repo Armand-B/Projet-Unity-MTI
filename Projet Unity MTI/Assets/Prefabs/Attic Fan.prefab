@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7221246879013172841
+--- !u!1 &1071675448
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,7 +8,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7221246879013399113}
+  - component: {fileID: 1071675450}
+  - component: {fileID: 1071675449}
+  - component: {fileID: 1071675451}
+  - component: {fileID: 7866032595626104957}
   m_Layer: 0
   m_Name: Attic Fan
   m_TagString: SolarPanel
@@ -16,22 +19,67 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7221246879013399113
+--- !u!4 &1071675450
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7221246879013172841}
+  m_GameObject: {fileID: 1071675448}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 49.41, y: -0.11, z: 113.67}
-  m_LocalScale: {x: 0.0054989806, y: 0.0054989806, z: 0.0054989806}
+  m_LocalPosition: {x: 53.121094, y: 0.7, z: 91.5}
+  m_LocalScale: {x: 0.0077490327, y: 0.0077490327, z: 0.0077490327}
   m_Children:
-  - {fileID: 7221246879013399119}
+  - {fileID: 1572570245}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &7221246879013172847
+--- !u!114 &1071675449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1071675448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8c65b6e1a0640c4e99e72f6a35f8d44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 30
+  secondsInvicibility: 2
+  deathSound: {fileID: 0}
+  deathEffect: {fileID: 0}
+--- !u!65 &1071675451
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1071675448}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 636.8339, y: 659.7453, z: 591.36194}
+  m_Center: {x: 12.351439, y: 306.26114, z: -60.368755}
+--- !u!54 &7866032595626104957
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1071675448}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!1 &1572570244
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -39,10 +87,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7221246879013399119}
-  - component: {fileID: 7221246879009974893}
-  - component: {fileID: 7221246879010973869}
-  - component: {fileID: 4521727956318958220}
+  - component: {fileID: 1572570245}
+  - component: {fileID: 1572570248}
+  - component: {fileID: 1572570247}
+  - component: {fileID: 1572570246}
   m_Layer: 0
   m_Name: Solar_battery
   m_TagString: Untagged
@@ -50,35 +98,35 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7221246879013399119
+--- !u!4 &1572570245
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7221246879013172847}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_GameObject: {fileID: 1572570244}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 642}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 7221246879013399113}
+  m_Father: {fileID: 1071675450}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &7221246879009974893
+--- !u!33 &1572570248
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7221246879013172847}
+  m_GameObject: {fileID: 1572570244}
   m_Mesh: {fileID: 4300004, guid: 3ff9887d81a75af49bb7f59ae0c43864, type: 3}
---- !u!23 &7221246879010973869
+--- !u!23 &1572570247
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7221246879013172847}
+  m_GameObject: {fileID: 1572570244}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -109,13 +157,13 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &4521727956318958220
+--- !u!64 &1572570246
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7221246879013172847}
+  m_GameObject: {fileID: 1572570244}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
