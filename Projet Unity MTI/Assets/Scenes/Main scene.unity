@@ -505,6 +505,9 @@ MonoBehaviour:
   - {fileID: 3721396675842882581, guid: d4592e08cb74d8c4aaeafe4625912538, type: 3}
   - {fileID: 3721396675842882581, guid: 17cdd26ea7ae6c9458ebf429c46eb46a, type: 3}
   - {fileID: 3721396675842882581, guid: 10df9d33954ee1a499c24a55f0200ad6, type: 3}
+  - {fileID: 3721396675842882581, guid: d6dfcb21e4c626140a05158caf890c0f, type: 3}
+  - {fileID: 3721396675842882581, guid: 6ad221eebf253f94d98d3b00908ac1d2, type: 3}
+  - {fileID: 3721396675842882581, guid: 3549443d3ac644d4e82986651e4cd94e, type: 3}
   mapWith: 5
   mapHeight: 5
   buildingFootPrint: 45
